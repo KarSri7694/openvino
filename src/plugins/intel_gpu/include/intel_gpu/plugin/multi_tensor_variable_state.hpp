@@ -40,7 +40,7 @@ public:
     VariableState::Ptr get_beam_table_state() const;
     ov::PartialShape get_beam_table_shape(const ov::PartialShape& kv_cache_shape);
 
-private:
+protected:
     size_t m_beam_axis = 0;
     size_t m_concat_axis = 0;
 };
